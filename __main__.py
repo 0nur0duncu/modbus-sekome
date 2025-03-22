@@ -39,14 +39,14 @@ async def red_flag_fixer():
         modeCert1.click()
         time.sleep(1)
 
-        file_path = os.path.join(os.getcwd(), 'Polootomasyon.lmc')
+        file_path = os.path.join(os.getcwd(), '<-->.lmc')
 
         file_input = wait.until(EC.element_to_be_clickable((By.ID, "certfile")))
 
         file_input.send_keys(file_path)
 
         password = wait.until(EC.element_to_be_clickable((By.NAME, "pass")))
-        password.send_keys("Polo+7656")
+        password.send_keys("<KEY>")
 
         login = wait.until(EC.element_to_be_clickable((By.NAME, "login")))
         login.click()
